@@ -1,0 +1,20 @@
+/* Ícones de coleções */
+.categories { display: flex; justify-content: center; gap: 48px; flex-wrap: wrap; }
+.category { display: flex; flex-direction: column; align-items: center; gap: 12px; color: var(--dark-gray-3); }
+.category__icon {
+  display: grid; place-items: center;
+  width: 100px; height: 100px;
+  background: var(--white);
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,.08);
+  transition: transform .2s, box-shadow .2s, color .2s;
+}
+.category.is-featured .category__icon { color: var(--primary); }
+.category:hover .category__icon { color: var(--primary); transform: translateY(-2px); box-shadow: 0 6px 16px rgba(201,32,113,.2); }
+.category__name { font-size: 16px; font-weight: 600; color: var(--dark-gray-2); }
+
+
+@media (max-width: 520px) {
+  .categories { gap: 20px; }
+  .category__icon { width: 76px; height: 76px; }
+}

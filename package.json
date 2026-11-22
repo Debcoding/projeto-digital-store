@@ -1,0 +1,25 @@
+{
+  "name": "digital-store",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Digital Store (Drip Store) – front-end em React + Vite + React Router",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.30.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^6.0.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": ["esbuild"]
+  }
+}

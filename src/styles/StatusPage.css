@@ -1,0 +1,6 @@
+/* =========================================================
+   PÁGINA "EM BREVE"
+   ========================================================= */
+.soon { background: var(--bg-soft); padding: 80px 0; margin-top: 24px; text-align: center; }
+.soon__title { font-size: 28px; font-weight: 700; color: var(--dark-gray-2); }
+.soon__text { margin: 16px 0 20px; font-size: 16px; color: var(--dark-gray-2); }

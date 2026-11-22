@@ -1,0 +1,27 @@
+/* =========================================================
+   FOOTER
+   ========================================================= */
+.footer { background: var(--dark-gray); color: var(--white); padding-top: 64px; }
+.footer__grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1.2fr; gap: 48px; }
+.footer__text { max-width: 320px; margin: 24px 0 20px; font-size: 14px; line-height: 1.9; color: var(--white); }
+.footer__social { display: flex; gap: 20px; }
+.footer__social a { display: inline-flex; transition: opacity .2s; }
+.footer__social a:hover { opacity: .7; }
+
+.footer__col h4 { margin-bottom: 20px; font-size: 18px; font-weight: 700; color: var(--white); }
+.footer__col li { margin-bottom: 14px; }
+.footer__col a, .footer__col p { font-size: 14px; color: var(--white); }
+.footer__col a:hover { text-decoration: underline; }
+.footer__col address p { margin-bottom: 24px; line-height: 1.9; }
+
+.footer__bottom { padding-block: 24px 28px; text-align: center; }
+.footer__bottom hr { border: 0; border-top: 1px solid var(--dark-gray-3); margin-bottom: 24px; }
+.footer__bottom p { font-size: 14px; color: var(--white); }
+
+
+@media (max-width: 900px) {
+  .footer__grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 520px) {
+  .footer__grid { grid-template-columns: 1fr; }
+}

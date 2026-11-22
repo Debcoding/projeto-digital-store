@@ -1,0 +1,10 @@
+/* Banners */
+.banners { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.banners a { display: block; border-radius: var(--radius); overflow: hidden; transition: transform .2s; }
+.banners a:hover { transform: translateY(-2px); }
+.banners img { width: 100%; height: auto; border-radius: var(--radius); }
+
+
+@media (max-width: 900px) {
+  .banners { grid-template-columns: 1fr; }
+}
